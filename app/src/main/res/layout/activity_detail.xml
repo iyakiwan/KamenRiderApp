@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="191dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_item_photo"
+                android:layout_marginBottom="4dp"
+                tools:src="@color/colorAccent"/>
+            <TextView
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Kamen Rider Kabuto"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+            <TextView
+                android:layout_below="@id/tv_item_name"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:id="@+id/tv_item_heisei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kamen Rider Heisei Ke-7"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="Original airing"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_item_realese"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="January 29, 2006-January 21, 2007"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="Total Episode"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_item_totaleps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="49 Episodes"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="Producer"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_item_producer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toei Company"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Sinopsis"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_sinopsis"
+            android:text="@string/sinopsis"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
